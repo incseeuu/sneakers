@@ -1,10 +1,10 @@
-import {createBrowserRouter} from 'react-router-dom'
+import {createHashRouter} from 'react-router-dom'
 import {AppLayout} from "./appLayout";
 import Shop from "../pages/Shop/ui/Shop";
 import Landing from "../pages/Landing/Landing";
 
 
-export const appRouter = createBrowserRouter([
+export const appRouter = createHashRouter([
     {
         path: '/',
         element: <AppLayout />,
