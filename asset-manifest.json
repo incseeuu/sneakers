@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sneakers/static/css/main.f8fea764.css",
+    "main.js": "/sneakers/static/js/main.10083032.js",
+    "static/media/bgvideo.mp4": "/sneakers/static/media/bgvideo.cf129641978b30d0fda8.mp4",
+    "static/media/logo.jpg": "/sneakers/static/media/logo.594b7f3c32b5dbc78e59.jpg",
+    "index.html": "/sneakers/index.html",
+    "main.f8fea764.css.map": "/sneakers/static/css/main.f8fea764.css.map",
+    "main.10083032.js.map": "/sneakers/static/js/main.10083032.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8fea764.css",
+    "static/js/main.10083032.js"
+  ]
+}
