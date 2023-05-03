@@ -1,0 +1,19 @@
+.container {
+    /*background-color: #f5f8fc;*/
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    align-self: center;
+    font-weight: bold;
+}
+
+.listItemButton {
+    cursor: pointer;
+}

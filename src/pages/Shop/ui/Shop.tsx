@@ -1,8 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {Box, Button} from "@mui/material";
-import {collection, getDocs} from "firebase/firestore";
-import {db} from "../../../firebase";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {RootState} from "../../../app/store";
 import {fetchSneakers} from "../../../entities/shop/model/sneakers";
 import {useAppDispatch} from "../../../shared/hooks/useAppDispatch";
@@ -19,6 +17,12 @@ type responseType = {
 
 const Shop = () => {
 
+    console.log('2')
+    useEffect(() => {
+        console.log('1')
+        window.scrollTo(0, 0)
+    },[])
+
     const sneackers = useSelector<RootState, responseType[]>(state => state.sneakersReducer)
     const dispatch = useAppDispatch()
 
@@ -33,6 +37,7 @@ const Shop = () => {
 
     return (
         <Box
+            boxSizing="border-box"
             padding="20px"
             width="100%"
             display="grid"
@@ -55,6 +60,7 @@ const Shop = () => {
                     </Box>
                 )
             })}
+
         </Box>
     );
 };

@@ -25,7 +25,7 @@ export const appRouter = createHashRouter([
             {
                 path: '/shop',
                 element: <Shop/>
-            }
+            },
         ],
     },
 ])
