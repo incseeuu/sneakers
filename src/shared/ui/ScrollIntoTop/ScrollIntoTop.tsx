@@ -37,7 +37,8 @@ const ScrollToTop = () => {
             bottom: '5rem',
             right: '5rem',
             textTransform: 'none',
-            borderRadius: 0
+            borderRadius: 0,
+            backgroundColor: 'white'
         }}
                 size={'medium'}
                 color={ 'inherit'}

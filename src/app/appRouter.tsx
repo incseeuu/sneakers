@@ -1,4 +1,4 @@
-import {createHashRouter} from 'react-router-dom'
+import {createHashRouter, Navigate} from 'react-router-dom'
 import {AppLayout} from "./appLayout";
 import Shop from "../pages/Shop/ui/Shop";
 import Landing from "../pages/Landing/Landing";

@@ -1,7 +1,7 @@
 import React from 'react';
 import {AppBar, Toolbar} from "@mui/material";
-import logo from "../../assets/logo.jpg";
-import CustomButton from "./CustomButton";
+import logo from "../../../assets/logo.jpg";
+import CustomButton from "../CustomButton/CustomButton";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import {useLocation, useNavigate} from "react-router-dom";
 import { scroller } from 'react-scroll'
@@ -52,9 +52,6 @@ const Header = () => {
             }, 500)
         }
     }
-    const onClickReviewsHandler = () => {
-
-    }
 
     return (
         <AppBar position="fixed" color='inherit'>
@@ -64,7 +61,6 @@ const Header = () => {
                     <CustomButton title={pathname === '/' ? 'Товары' : 'Главная'} variant={'text'} callback={onClickGoToShopHandler}/>
                     <CustomButton title={'Как узнать размер?'} variant={'text'} callback={onClickHowToKnowSizeHandler}/>
                     <CustomButton title={'Часто задаваемые вопросы'} variant={'text'} callback={onClickQuestionsHandler}/>
-                    <CustomButton title={'Отзывы'} variant={'text'} callback={onClickReviewsHandler}/>
                 </div>
                 <div style={{display: 'flex'}}>
                     Корзина:<ShoppingBagOutlinedIcon/>

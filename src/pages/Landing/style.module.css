@@ -1,0 +1,11 @@
+.activeHeader {
+    color: white;
+    /*font-family: myFont, sans-serif;*/
+    font-weight: bold;
+}
+
+.header {
+    color: white;
+    font-family: myFont, sans-serif;
+}
+

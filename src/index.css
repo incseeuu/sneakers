@@ -1,6 +1,12 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
+@font-face {
+    font-family: 'myFont';
+    src: url('./assets/muller_extrabold_demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -10,6 +16,7 @@
 * {
     margin: 0;
 }
+
 /*
   3. Allow percentage-based heights in the application
 */

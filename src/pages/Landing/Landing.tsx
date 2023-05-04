@@ -6,6 +6,7 @@ import {motion} from "framer-motion";
 import {Link} from 'react-scroll'
 import FootSize from "../../widgets/FootSize/FootSize";
 import Questions from "../../widgets/Questions/Questions";
+import s from './style.module.css'
 
 const Landing = () => {
 
@@ -56,7 +57,7 @@ const Landing = () => {
                         exit={{opacity: 0, transition: {duration: 0.2}}}
                         transition={{duration: 1}}
                     >
-                        <Typography variant="h3" color='white' sx={{fontFamily: 'Ubuntu', fontWeight: 'bold'}}>
+                        <Typography className={s.activeHeader} variant="h3">
                             {text}
                             <Cursor cursorColor='#bbb' cursorBlinking={true}/>
                         </Typography>
@@ -67,14 +68,18 @@ const Landing = () => {
                         exit={{opacity: 0, transition: {duration: 0.2}}}
                         transition={{duration: 1}}
                     >
-                        <Typography variant="h5" color='white'>Мы сотрудничаем напрямую с производителями из
-                            Китая</Typography>
-                        <Typography variant="h6" color='white'>У нас лучшее качество в регионе :)
+                        <Typography className={s.header} variant="h5">Мы сотрудничаем напрямую с производителями из
+                            Китая.</Typography>
+                        <Typography className={s.header} variant="h6">У нас лучшее качество в регионе.
                         </Typography>
                     </motion.div>
 
                 </Box>
-                <Button sx={{color: 'white', border: '1px white solid', borderRadius: '0', textTransform: 'none'}}>
+                <Button sx={{fontFamily: 'myFont, sans-serif',
+                    color: 'white',
+                    border: '1px white solid',
+                    borderRadius: '0',
+                    textTransform: 'none'}}>
                     Освежить свой стиль
                 </Button>
 
@@ -101,7 +106,16 @@ const Landing = () => {
                 <hr id='section2' style={{marginTop: '3rem', marginBottom: '3rem', opacity: '0.5'}}></hr>
             </Link>
             <Questions/>
-            <Box height={'100vh'}></Box>
+            <Link
+
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1500}
+            >
+                <hr id='section3' style={{marginTop: '3rem', marginBottom: '3rem', opacity: '0.5'}}></hr>
+            </Link>
         </Box>
 
 

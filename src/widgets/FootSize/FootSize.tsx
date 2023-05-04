@@ -7,7 +7,7 @@ import sizes from '../../assets/sizes.png'
 
 const FootSize = () => {
     return (
-        <Container maxWidth="xl" className={s.container}>
+        <Container maxWidth="lg" className={s.container}>
             <Box className={s.content}>
                 <Typography className={s.header} variant={'h4'}>Как определить размер обуви?</Typography>
                 <ListItemButton className={s.listItem}>

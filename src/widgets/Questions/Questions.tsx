@@ -53,7 +53,7 @@ const Questions = () => {
     };
 
     return (
-        <Container maxWidth="xl" className={s.container}>
+        <Container maxWidth="lg" className={s.container}>
             <Box className={s.content}>
                 <Typography className={s.header} variant={'h4'}>Часто задаваемые вопросы</Typography>
                 {open.map(el => {

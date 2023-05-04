@@ -1,0 +1,12 @@
+.container {
+    background-color: #3e4d57;
+    height: 20vh;
+    color: white;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}

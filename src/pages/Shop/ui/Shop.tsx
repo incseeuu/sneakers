@@ -17,12 +17,6 @@ type responseType = {
 
 const Shop = () => {
 
-    console.log('2')
-    useEffect(() => {
-        console.log('1')
-        window.scrollTo(0, 0)
-    },[])
-
     const sneackers = useSelector<RootState, responseType[]>(state => state.sneakersReducer)
     const dispatch = useAppDispatch()
 

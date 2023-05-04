@@ -1,15 +1,17 @@
 .container {
     /*background-color: #f5f8fc;*/
+
 }
 
 .content {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-direction: column;
     justify-content: center;
 }
 
 .header {
+    font-family: myFont, sans-serif !important;
     align-self: center;
     font-weight: bold;
 }
