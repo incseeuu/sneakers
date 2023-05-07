@@ -1,12 +1,43 @@
 .container {
     background-color: #3e4d57;
-    height: 20vh;
+    height: 15vh;
     color: white;
-
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
 .content {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+a {
+    color: white;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rigths {
+    margin-top: 5px;
+    align-self: center;
+}
+
+.logo {
+    width: 70px;
+    height: 40px;
+}
+
+.phonenumber {
+    font-weight: normal;
 }

@@ -1,18 +1,16 @@
-import {collection, getDocs} from "firebase/firestore";
-import {db} from "../../../firebase";
 import {createAppAsyncThunk} from "../../../shared/lib/create-async-app-thunk";
 import {createSlice} from "@reduxjs/toolkit";
+import axios, {AxiosResponse} from "axios";
 
 
-const sneackersCollectionRef = collection(db, 'sneackers')
 
 export const fetchSneakers = createAppAsyncThunk<responseSneakersType[], void>(
     'sneakers', async (_, {rejectWithValue}) => {
         try {
-            const data = await getDocs(sneackersCollectionRef)
-            const filteredData = data.docs
-                .map((doc) => ({...doc.data(), id: doc.id}))
-            return (filteredData as responseSneakersType[])
+            const res: AxiosResponse<responseSneakersType[]> = await axios.get('https://64577bed0c15cb148209b464.mockapi.io/products')
+            const data = res.data
+
+            return data as responseSneakersType[]
         } catch (e) {
             console.error(e)
             return rejectWithValue(null)
@@ -20,11 +18,11 @@ export const fetchSneakers = createAppAsyncThunk<responseSneakersType[], void>(
     }
 )
 
-type responseSneakersType = {
-    id: string
+export type responseSneakersType = {
+    id: number
+    brand: string
+    photo: string[]
     model: string
-    photo: string
-    title: string
     price: number
 }
 

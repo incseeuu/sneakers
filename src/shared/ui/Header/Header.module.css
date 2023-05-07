@@ -1,0 +1,22 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+}
+
+.rightSide {
+    font-family: Century, sans-serif;
+    display: flex;
+    gap: 10px
+}

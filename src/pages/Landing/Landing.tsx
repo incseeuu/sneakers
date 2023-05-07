@@ -7,28 +7,14 @@ import {Link} from 'react-scroll'
 import FootSize from "../../widgets/FootSize/FootSize";
 import Questions from "../../widgets/Questions/Questions";
 import s from './style.module.css'
+import TypeWritter from "../../shared/ui/TypeWritter/TypeWritter";
 
 const Landing = () => {
 
 
-
-    const [text, count] = useTypewriter({
-        words: ["Welcome!",
-            "Добро пожаловать!",
-            "Bienvenue!",
-            "Willkommen!",
-            "Benvenuto!",
-            "ようこそ",
-            "환영합니다",
-            "Bienvenido"],
-        loop: true,
-        typeSpeed: 100,
-        delaySpeed: 3000,
-    })
-
     return (
 
-        <Box >
+        <Box>
 
             <Box position="relative" display="flex" alignItems="center" justifyContent="space-around" height='90vh'>
                 <Box
@@ -57,10 +43,7 @@ const Landing = () => {
                         exit={{opacity: 0, transition: {duration: 0.2}}}
                         transition={{duration: 1}}
                     >
-                        <Typography className={s.activeHeader} variant="h3">
-                            {text}
-                            <Cursor cursorColor='#bbb' cursorBlinking={true}/>
-                        </Typography>
+                        <TypeWritter/>
                     </motion.div>
                     <motion.div
                         initial={{x: -300}}
@@ -75,11 +58,13 @@ const Landing = () => {
                     </motion.div>
 
                 </Box>
-                <Button sx={{fontFamily: 'myFont, sans-serif',
+                <Button sx={{
+                    fontFamily: 'myFont, sans-serif',
                     color: 'white',
                     border: '1px white solid',
                     borderRadius: '0',
-                    textTransform: 'none'}}>
+                    textTransform: 'none'
+                }}>
                     Освежить свой стиль
                 </Button>
 
@@ -106,16 +91,6 @@ const Landing = () => {
                 <hr id='section2' style={{marginTop: '3rem', marginBottom: '3rem', opacity: '0.5'}}></hr>
             </Link>
             <Questions/>
-            <Link
-
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={1500}
-            >
-                <hr id='section3' style={{marginTop: '3rem', marginBottom: '3rem', opacity: '0.5'}}></hr>
-            </Link>
         </Box>
 
 

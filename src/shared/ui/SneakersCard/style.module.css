@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.card:hover {
+}
+
+h2 {
+    text-transform: capitalize;
+    font-family: myFont;
+}
+
+.btn {
+    border-radius: 0 !important;
+    text-transform: none !important;
+    border: 1px black solid !important;
+}
+
+.photoContainer {
+    height: 70%;
+}
+
+.footer {
+
+}
+
