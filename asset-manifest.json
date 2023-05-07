@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/sneakers/static/css/main.c438001b.css",
-    "main.js": "/sneakers/static/js/main.b0fde62a.js",
+    "main.css": "/sneakers/static/css/main.6d5a99cf.css",
+    "main.js": "/sneakers/static/js/main.fa79935f.js",
     "static/media/bgvideo.mp4": "/sneakers/static/media/bgvideo.cf129641978b30d0fda8.mp4",
     "static/media/sizes.png": "/sneakers/static/media/sizes.19628cd4ab69b3e168ad.png",
     "static/media/foot.png": "/sneakers/static/media/foot.a88cc647d6c4f00347f0.png",
-    "static/media/logo.jpg": "/sneakers/static/media/logo.594b7f3c32b5dbc78e59.jpg",
+    "static/media/muller_extrabold_demo.ttf": "/sneakers/static/media/muller_extrabold_demo.68a080d789f31b3ee01d.ttf",
+    "static/media/logo.png": "/sneakers/static/media/logo.fe462a077138a39f3b15.png",
+    "static/media/whitelogo.png": "/sneakers/static/media/whitelogo.5c75d6d405111e2ebe95.png",
+    "static/media/vk.svg": "/sneakers/static/media/vk.1359ea78776c9c6105b0763671dca920.svg",
+    "static/media/telegram.svg": "/sneakers/static/media/telegram.92c104fc53422306db6a97c0c6639d32.svg",
     "index.html": "/sneakers/index.html",
-    "main.c438001b.css.map": "/sneakers/static/css/main.c438001b.css.map",
-    "main.b0fde62a.js.map": "/sneakers/static/js/main.b0fde62a.js.map"
+    "static/media/instagram.svg": "/sneakers/static/media/instagram.92be9f77957b5d10267d27a43dfaf0ce.svg",
+    "main.6d5a99cf.css.map": "/sneakers/static/css/main.6d5a99cf.css.map",
+    "main.fa79935f.js.map": "/sneakers/static/js/main.fa79935f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c438001b.css",
-    "static/js/main.b0fde62a.js"
+    "static/css/main.6d5a99cf.css",
+    "static/js/main.fa79935f.js"
   ]
 }
