@@ -1,5 +1,5 @@
 import React from 'react';
-import {AppBar, Toolbar} from "@mui/material";
+import {AppBar, Badge, BadgeProps, IconButton, styled, Toolbar} from "@mui/material";
 import logo from "../../../assets/logo.png";
 import CustomButton from "../CustomButton/CustomButton";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
@@ -10,6 +10,15 @@ import {useSelector} from "react-redux";
 import {RootState} from "../../../app/store";
 import {CartState} from "../../../entities/cart/model/cart";
 
+
+const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
+    '& .MuiBadge-badge': {
+        right: -3,
+        top: 13,
+        border: `2px solid ${theme.palette.background.paper}`,
+        padding: '0 4px',
+    },
+}));
 
 const Header = () => {
 
@@ -69,11 +78,14 @@ const Header = () => {
                     <CustomButton title={'Часто задаваемые вопросы'} variant={'text'} callback={onClickQuestionsHandler}/>
                 </div>
                 <div className={s.rightSide}>
-                    <span>Общая стоимость: {state.totalPrice}</span>
-                    <ShoppingBagOutlinedIcon/>
-                    <span>{state.items.reduce((acc, val) => acc + val.count, 0)}</span>
+                    <IconButton aria-label="cart">
+                        <StyledBadge
+                            badgeContent={state.items.reduce((acc, val) => acc + val.count, 0)}
+                            color="primary">
+                            <ShoppingBagOutlinedIcon/>
+                        </StyledBadge>
+                    </IconButton>
                 </div>
-
             </Toolbar>
         </AppBar>
     );

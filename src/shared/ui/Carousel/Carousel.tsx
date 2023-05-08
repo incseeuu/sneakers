@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import s from './style.module.css';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+
 
 type CarouselProps = {
     images: string[];
@@ -39,11 +42,10 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     return (
         <div className={s.carousel}>
             <button className={s.prev} onClick={handlePrev}>
-                {'<'}
+                <KeyboardArrowLeftIcon/>
             </button>
             <motion.img
                 key={currentIndex}
-                className="carousel__image"
                 src={images[currentIndex]}
                 alt="Carousel Image"
                 custom={currentIndex > 0 ? 1 : -1}
@@ -54,7 +56,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
                 transition={{ ease: 'easeInOut', duration: 0.5 }}
             />
             <button className={s.next} onClick={handleNext}>
-                {'>'}
+                <KeyboardArrowRightIcon />
             </button>
         </div>
     );

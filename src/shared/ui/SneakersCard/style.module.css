@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: auto;
     transition: 0.2s ease-in-out;
 
 }
@@ -11,22 +11,39 @@
 .card:hover {
 }
 
-h2 {
+h5 {
     text-transform: capitalize;
-    font-family: myFont;
+
 }
 
 .btn {
     border-radius: 0 !important;
     text-transform: none !important;
-    border: 1px black solid !important;
 }
 
 .photoContainer {
-    height: 70%;
+    height: 374px;
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px 0;
+    width: 100%;
+}
 
+.footerWithHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerWithHeader h5, h6 {
+    font-family: Kanit, sans-serif !important;
+}
+
+.footerWithButton {
+    display: flex;
+    justify-content: space-around;
 }
 

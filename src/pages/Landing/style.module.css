@@ -1,7 +1,10 @@
-
-
 .header {
     color: white;
-    font-family: myFont, sans-serif;
+    font-family: 'russian-demibold', sans-serif !important;
+}
+
+.headerTwo {
+    color: white;
+    font-family: 'russian-medium', sans-serif !important;
 }
 

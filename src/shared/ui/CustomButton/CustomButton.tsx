@@ -20,7 +20,7 @@ const CustomButton = ({callback, title, variant, color, size}: Props) => {
             size={size ? size : 'medium'}
             color={color ? color : 'inherit'}
             variant={variant ? variant : 'outlined'}
-            sx={{borderRadius: 0, textTransform: 'none', minWidth: '5rem', fontFamily: 'myFont, sans-serif !important'}}
+            sx={{borderRadius: 0, textTransform: 'none', minWidth: '5rem', fontFamily: 'russian-bold, sans-serif !important'}}
             onClick={onClickHandler}>
             {title}
         </Button>

@@ -1,16 +1,21 @@
 import React from 'react';
 import {Box, Button, Typography} from '@mui/material';
 import sample from '../../assets/bgvideo.mp4';
-import {Cursor, useTypewriter} from "react-simple-typewriter";
 import {motion} from "framer-motion";
 import {Link} from 'react-scroll'
 import FootSize from "../../widgets/FootSize/FootSize";
 import Questions from "../../widgets/Questions/Questions";
 import s from './style.module.css'
 import TypeWritter from "../../shared/ui/TypeWritter/TypeWritter";
+import {useNavigate} from "react-router-dom";
 
 const Landing = () => {
 
+    const navigate = useNavigate()
+
+    const onNavigateToShopHandler = () => {
+        navigate('/shop')
+    }
 
     return (
 
@@ -53,18 +58,20 @@ const Landing = () => {
                     >
                         <Typography className={s.header} variant="h5">Мы сотрудничаем напрямую с производителями из
                             Китая.</Typography>
-                        <Typography className={s.header} variant="h6">У нас лучшее качество в регионе.
+                        <Typography className={s.headerTwo} variant="h6">У нас лучшее качество в регионе.
                         </Typography>
                     </motion.div>
 
                 </Box>
-                <Button sx={{
-                    fontFamily: 'myFont, sans-serif',
-                    color: 'white',
-                    border: '1px white solid',
-                    borderRadius: '0',
-                    textTransform: 'none'
-                }}>
+                <Button
+                    onClick={onNavigateToShopHandler}
+                    sx={{
+                        fontFamily: 'myFont, sans-serif',
+                        color: 'white',
+                        border: '1px white solid',
+                        borderRadius: '0',
+                        textTransform: 'none'
+                    }}>
                     Освежить свой стиль
                 </Button>
 

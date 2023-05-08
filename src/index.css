@@ -2,10 +2,23 @@
   1. Use a more-intuitive box-sizing model.
 */
 @font-face {
-    font-family: 'myFont';
-    src: url('./assets/muller_extrabold_demo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'russian-medium';
+    src: url('./assets/fonts/golos-text_medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'russian-bold';
+    src: url('./assets/fonts/golos-text_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'russian-regular';
+    src: url('./assets/fonts/golos-text_regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'russian-demibold';
+    src: url('./assets/fonts/golos-text_demibold.woff') format('woff');
 }
 *, *::before, *::after {
     box-sizing: border-box;

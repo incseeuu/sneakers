@@ -3,8 +3,6 @@
     height: 15vh;
     color: white;
     margin-top: 1rem;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
 }
 
 .content {
@@ -29,6 +27,7 @@ a {
 }
 
 .rigths {
+    font-family: Kanit, sans-serif !important;
     margin-top: 5px;
     align-self: center;
 }
@@ -38,6 +37,10 @@ a {
     height: 40px;
 }
 
+.contactUs {
+    font-family: russian-medium, sans-serif !important;
+}
+
 .phonenumber {
-    font-weight: normal;
+    font-family: russian-regular, sans-serif !important;
 }

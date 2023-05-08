@@ -1,5 +1,5 @@
 .activeHeader {
     color: white;
-    /*font-family: myFont, sans-serif;*/
+    font-family: 'Kanit', 'russian-bold', sans-serif !important;
     font-weight: bold;
 }

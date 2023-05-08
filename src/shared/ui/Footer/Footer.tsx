@@ -11,7 +11,7 @@ const Footer = () => {
         <Box className={s.container}>
             <Box className={s.content}>
                 <Box>
-                    <Typography variant='inherit'>Связаться с нами:</Typography>
+                    <Typography className={s.contactUs} variant='inherit'>Связаться с нами:</Typography>
                     <Typography className={s.phonenumber} variant='inherit'>+7 959 111 11 11</Typography>
                     <Box className={s.icons}>
                         <a href={'#'} target={"_blank"}>

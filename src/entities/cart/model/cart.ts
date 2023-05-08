@@ -1,21 +1,21 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {stateType} from "../../shop/model/sneakers";
+import {SneakersStateType} from "../../shop/model/sneakers";
 
 export type CartState = {
     totalPrice: number
-    items: stateType[]
+    items: SneakersStateType[]
 }
 
 const initialState: CartState = {
     totalPrice: 0,
-    items: [] as stateType[]
+    items: [] as SneakersStateType[]
 }
 
 const slice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        addItemToCart: (state, action: PayloadAction<stateType>) => {
+        addItemToCart: (state, action: PayloadAction<SneakersStateType>) => {
             const findItem = state.items.find(el => el.id === action.payload.id)
 
             if(findItem){

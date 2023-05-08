@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Button} from "@mui/material";
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -38,13 +39,13 @@ const ScrollToTop = () => {
             right: '5rem',
             textTransform: 'none',
             borderRadius: 0,
-            backgroundColor: 'white'
+            zIndex: 3,
         }}
                 size={'medium'}
                 color={ 'inherit'}
                 variant={'outlined'}
                 onClick={scrollToTop}>
-            На верх
+            <KeyboardArrowUpIcon />
         </Button>
     );
 };
