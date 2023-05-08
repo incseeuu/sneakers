@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/sneakers/static/css/main.6d5a99cf.css",
-    "main.js": "/sneakers/static/js/main.fa79935f.js",
+    "main.css": "/sneakers/static/css/main.e8ef8b0e.css",
+    "main.js": "/sneakers/static/js/main.5c5c72e5.js",
     "static/media/bgvideo.mp4": "/sneakers/static/media/bgvideo.cf129641978b30d0fda8.mp4",
     "static/media/sizes.png": "/sneakers/static/media/sizes.19628cd4ab69b3e168ad.png",
     "static/media/foot.png": "/sneakers/static/media/foot.a88cc647d6c4f00347f0.png",
-    "static/media/muller_extrabold_demo.ttf": "/sneakers/static/media/muller_extrabold_demo.68a080d789f31b3ee01d.ttf",
     "static/media/logo.png": "/sneakers/static/media/logo.fe462a077138a39f3b15.png",
     "static/media/whitelogo.png": "/sneakers/static/media/whitelogo.5c75d6d405111e2ebe95.png",
+    "static/media/golos-text_demibold.woff": "/sneakers/static/media/golos-text_demibold.888b4bed37bbb263737e.woff",
+    "static/media/golos-text_medium.woff": "/sneakers/static/media/golos-text_medium.4907ba017df6078151bb.woff",
+    "static/media/golos-text_bold.woff": "/sneakers/static/media/golos-text_bold.ee4278a57fc4ea9c5733.woff",
+    "static/media/golos-text_regular.woff": "/sneakers/static/media/golos-text_regular.b1395e91e001884eee01.woff",
     "static/media/vk.svg": "/sneakers/static/media/vk.1359ea78776c9c6105b0763671dca920.svg",
     "static/media/telegram.svg": "/sneakers/static/media/telegram.92c104fc53422306db6a97c0c6639d32.svg",
     "index.html": "/sneakers/index.html",
     "static/media/instagram.svg": "/sneakers/static/media/instagram.92be9f77957b5d10267d27a43dfaf0ce.svg",
-    "main.6d5a99cf.css.map": "/sneakers/static/css/main.6d5a99cf.css.map",
-    "main.fa79935f.js.map": "/sneakers/static/js/main.fa79935f.js.map"
+    "main.e8ef8b0e.css.map": "/sneakers/static/css/main.e8ef8b0e.css.map",
+    "main.5c5c72e5.js.map": "/sneakers/static/js/main.5c5c72e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d5a99cf.css",
-    "static/js/main.fa79935f.js"
+    "static/css/main.e8ef8b0e.css",
+    "static/js/main.5c5c72e5.js"
   ]
 }
