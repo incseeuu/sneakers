@@ -2,22 +2,17 @@
     display: flex;
 }
 
-.filters {
-    margin: 4rem 1rem;
-}
 
-.accordion {
-}
 
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 1rem;
 }
 
 .pagination {
-    align-self: center;
 }
 
 .pagination li button {
@@ -26,24 +21,26 @@
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
     box-sizing: border-box;
     padding: 20px;
     width: 100%;
     gap: 1.5rem;
 }
 
-.btn {
-    position: absolute !important;
-    right: 0;
-    border-radius: 0 !important;
-    text-transform: none !important;
+@media (max-width: 681px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
 }
 
-.filterCategory {
-    font-family: russian-medium, sans-serif !important;
-}
 
-.filterItem {
-}
+
+

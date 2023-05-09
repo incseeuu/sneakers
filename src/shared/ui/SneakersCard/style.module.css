@@ -11,11 +11,6 @@
 .card:hover {
 }
 
-h5 {
-    text-transform: capitalize;
-
-}
-
 .btn {
     border-radius: 0 !important;
     text-transform: none !important;
@@ -30,20 +25,32 @@ h5 {
     flex-direction: column;
     justify-content: start;
     padding: 10px 0;
+    background-color: #fafafa;
     width: 100%;
 }
 
 .footerWithHeader {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
 }
 
-.footerWithHeader h5, h6 {
+.footerWithHeader h6 {
     font-family: Kanit, sans-serif !important;
+    text-transform: capitalize;
+}
+
+.footerWithHeader h5 {
+    font-family: Kanit, sans-serif !important;
+    text-transform: capitalize;
+    font-weight: bolder;
 }
 
 .footerWithButton {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
 }
 

@@ -28,6 +28,7 @@ export type responseSneakersType = {
     brand: string
     photo: string[]
     model: string
+    other: boolean
     gender: string
     price: number
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 import {Box, Button, Paper, Typography} from "@mui/material";
-import {Sneakers} from "../../../pages/Shop/ui/Shop";
 import s from './style.module.css'
 import Carousel from "../Carousel/Carousel";
 import CheckIcon from '@mui/icons-material/Check';
 import {useSelector} from "react-redux";
 import {RootState} from "../../../app/store";
 import {CartState} from "../../../entities/cart/model/cart";
+import {SneakersStateType} from "../../../entities/shop/model/sneakers";
 
 type Props = {
-    item: Sneakers
-    addToCart: (item: Sneakers) => void
+    item: SneakersStateType
+    addToCart: (item: SneakersStateType) => void
 }
 
 const SneakersItem = ({item, addToCart}: Props) => {
@@ -46,7 +46,12 @@ const SneakersItem = ({item, addToCart}: Props) => {
                     <Box className={s.footerWithButton}>
                         <h3 style={{fontFamily: 'russian-regular, sans-serif'}}>{price} руб.</h3>
                         {isItemAdded()
-                            ? <span>В Корзине<CheckIcon/></span>
+                            ? <span
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    fontFamily: 'russian-regular, sans-serif'
+                            }}>В Корзине<CheckIcon/></span>
                             : <Button className={s.btn}
                                       onClick={addToCartHandler}
                                       size='small'

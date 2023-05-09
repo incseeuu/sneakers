@@ -6,8 +6,8 @@ export type FilterState = {
 }
 
 const initialState: FilterState = {
-    mainFilters: ['male', 'female', 'nike', 'adidas', 'newBalance', 'puma'],
-    price: []
+    mainFilters: ['male', 'female', 'nike', 'adidas', 'new balance', 'puma', 'other'],
+    price: [0, 99999]
 }
 
 const slice = createSlice({

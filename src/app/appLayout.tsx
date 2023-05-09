@@ -8,6 +8,7 @@ import {animateScroll} from "react-scroll";
 
 export const AppLayout = () => {
 
+    const {pathname} = useLocation()
 
     useEffect(() => {
         function scrollHandler() {
@@ -24,11 +25,11 @@ export const AppLayout = () => {
                 <header>
                     <Header/>
                 </header>
-                <main style={{marginTop: '3rem'}}>
+                <main style={{margin: '3rem 0',}}>
                     <Outlet/>
                 </main>
-                <footer>
-                    <Footer/>
+                <footer style={{minHeight: '1px'}}>
+                    {pathname !== '/' || <Footer/>}
                 </footer>
                 <ScrollToTop/>
             </div>

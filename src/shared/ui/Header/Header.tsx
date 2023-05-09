@@ -5,7 +5,7 @@ import CustomButton from "../CustomButton/CustomButton";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import {useLocation, useNavigate} from "react-router-dom";
 import { scroller } from 'react-scroll'
-import s from './Header.module.css'
+import s from './styles.module.css'
 import {useSelector} from "react-redux";
 import {RootState} from "../../../app/store";
 import {CartState} from "../../../entities/cart/model/cart";
@@ -69,7 +69,7 @@ const Header = () => {
     }
 
     return (
-        <AppBar position="fixed" color='inherit'>
+        <AppBar position="fixed" color='inherit' sx={{backgroundColor: '#fafafa'}}>
             <Toolbar variant="dense" className={s.toolbar}>
                 <div className={s.content} >
                     <img src={logo} alt='img' className={s.logo} onClick={onClickGoToShopHandler}/>
@@ -81,7 +81,8 @@ const Header = () => {
                     <IconButton aria-label="cart">
                         <StyledBadge
                             badgeContent={state.items.reduce((acc, val) => acc + val.count, 0)}
-                            color="primary">
+                            className={s.badge}
+                        >
                             <ShoppingBagOutlinedIcon/>
                         </StyledBadge>
                     </IconButton>

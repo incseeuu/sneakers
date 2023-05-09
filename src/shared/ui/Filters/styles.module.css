@@ -1,0 +1,25 @@
+.filters {
+    margin: 4rem 1rem;
+}
+
+.accordion {
+    background-color: #fafafa;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border-radius: 0 !important;
+    text-transform: none !important;
+    font-family: russian-medium, sans-serif !important;
+}
+
+.filterCategory {
+    font-family: russian-medium, sans-serif !important;
+}
+
+.filterItem {
+}

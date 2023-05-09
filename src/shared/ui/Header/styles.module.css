@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+
 }
 
 .content {
@@ -19,4 +20,9 @@
     font-family: Century, sans-serif;
     display: flex;
     gap: 10px
+}
+
+.badge span {
+    color: white;
+    background-color: #3e4d57;
 }
