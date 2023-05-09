@@ -1,0 +1,12 @@
+.content {
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 0 !important;
+    text-transform: none !important;
+}
+
+.price {
+    font-family: russian-medium, sans-serif !important;
+}

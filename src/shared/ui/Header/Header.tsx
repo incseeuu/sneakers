@@ -28,6 +28,10 @@ const Header = () => {
     const navigate = useNavigate()
 
 
+    const onClickMoveToCartHandler = () => {
+        navigate('/cart')
+    }
+
     const onClickHowToKnowSizeHandler = () => {
         if(pathname === '/'){
             scroller.scrollTo('section1', {
@@ -78,12 +82,12 @@ const Header = () => {
                     <CustomButton title={'Часто задаваемые вопросы'} variant={'text'} callback={onClickQuestionsHandler}/>
                 </div>
                 <div className={s.rightSide}>
-                    <IconButton aria-label="cart">
+                    <IconButton aria-label="cart" onClick={onClickMoveToCartHandler}>
                         <StyledBadge
                             badgeContent={state.items.reduce((acc, val) => acc + val.count, 0)}
                             className={s.badge}
                         >
-                            <ShoppingBagOutlinedIcon/>
+                            <ShoppingBagOutlinedIcon />
                         </StyledBadge>
                     </IconButton>
                 </div>

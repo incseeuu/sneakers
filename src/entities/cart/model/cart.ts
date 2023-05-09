@@ -24,10 +24,17 @@ const slice = createSlice({
                 state.items.push({...action.payload, count: 1})
             }
             state.totalPrice = state.items.reduce((acc, val) => val.count * val.price + acc, 0)
+        },
+        removeItemFromCart(state, action: PayloadAction<number>){
+            const index = state.items.findIndex(el => el.id === action.payload)
+            if(index !== -1) state.items.splice(index,1)
+        },
+        clearCart(state, action: PayloadAction<[]>) {
+            state.items = []
         }
     },
     extraReducers: {}
 })
 
 export const cartReducer = slice.reducer
-export const {addItemToCart} = slice.actions
+export const {addItemToCart, removeItemFromCart, clearCart} = slice.actions

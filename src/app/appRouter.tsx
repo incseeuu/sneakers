@@ -2,21 +2,18 @@ import {createHashRouter, Navigate} from 'react-router-dom'
 import {AppLayout} from "./appLayout";
 import Shop from "../pages/Shop/ui/Shop";
 import Landing from "../pages/Landing/Landing";
+import Cart from "../pages/cart/Cart";
 
 
 export const appRouter = createHashRouter([
     {
         path: '/',
         element: <AppLayout />,
-        errorElement: <div>error</div>,
+        // errorElement: <div>error</div>,
         children: [
             {
-                path: '/login',
-                element: <div>login</div>,
-            },
-            {
-                path: '/category',
-                element: <div>category</div>,
+                path: '/cart',
+                element: <Cart />,
             },
             {
                 path: '/',
